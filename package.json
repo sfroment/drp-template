@@ -1,0 +1,46 @@
+{
+	"name": "drp-template",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"clean": "rm -rf dist/ node_modules/",
+		"dev": "vite serve",
+		"start": "vite preview --host --port 5173"
+	},
+	"dependencies": {
+		"@libp2p/devtools-metrics": "^1.2.0",
+		"@libp2p/interface": "^2.4.0",
+		"@ts-drp/node": "npm:@sfroment/node@latest",
+		"@ts-drp/object": "npm:@sfroment/object@latest",
+		"globalthis": "^1.0.4",
+		"it-pipe": "^3.0.1",
+		"it-pushable": "^3.2.3",
+		"it-rpc": "^1.0.2",
+		"multiformats": "^13.3.1"
+	},
+	"devDependencies": {
+		"@types/chrome": "^0.0.273",
+		"@types/node": "^22.5.4",
+		"@typescript-eslint/parser": "^8.21.0",
+		"eslint": "^9.19.0",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-prettier": "^5.2.3",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"eslint-plugin-vitest": "^0.5.4",
+		"globals": "^15.14.0",
+		"ts-node": "^10.9.2",
+		"ts-proto": "^2.2.4",
+		"tsx": "4.19.1",
+		"typedoc": "^0.26.6",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.21.0",
+		"vite": "^6.0.9",
+		"vite-plugin-node-polyfills": "^0.23.0"
+	},
+	"author": "Sacha Froment <sfroment42@gmail.com>",
+	"license": "MIT",
+	"packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
+}

@@ -1,0 +1,19 @@
+modules = ["nodejs-20", "bash"]
+
+[run]
+args = ["sh", "-c", "pnpm i && pnpm dev"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+deploymentTarget = "static"
+publicDir = "./dist"
+
+[deployment.build]
+args = ["sh", "-c", "pnpm i && pnpm build"]
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
