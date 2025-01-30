@@ -16,10 +16,10 @@ importers:
         version: 2.4.0
       '@ts-drp/node':
         specifier: npm:@sfroment/node@latest
-        version: '@sfroment/node@0.6.10(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))'
+        version: '@sfroment/node@0.6.11(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))'
       '@ts-drp/object':
         specifier: npm:@sfroment/object@latest
-        version: '@sfroment/object@0.6.10'
+        version: '@sfroment/object@0.6.11'
       globalthis:
         specifier: ^1.0.4
         version: 1.0.4
@@ -1596,20 +1596,20 @@ packages:
   '@scure/bip39@1.5.4':
     resolution: {integrity: sha512-TFM4ni0vKvCfBpohoh+/lY05i9gRbSwXWngAsF4CABQxoaOHijxuaZ2R6cStDQ5CHtHO9aGJTr4ksVJASRRyMA==}
 
-  '@sfroment/blueprints@0.6.10':
-    resolution: {integrity: sha512-cbQsMIx9JH5m7ovv1iUb71Pp3JDUDNHhBmR0nJ9L9qXxogGAzll+XKa5b+8qm7oNA7zF9x6JDosSnFLgnjhR3g==}
+  '@sfroment/blueprints@0.6.11':
+    resolution: {integrity: sha512-VryXlrbhEiQQ2Ey/ts1Xb3XvjBw2I3VDYoJFZwpmppXiAbuVTsWVL8Mr9X1OSX+S1SNb7x6Go9xRzwK2IlbbBQ==}
 
-  '@sfroment/logger@0.6.10':
-    resolution: {integrity: sha512-VToLASgZGzzXJ9COGW1JFQwNSsMC06G5E3v8NCK+Bf2bKI3KSnd3G7M+HAp3Jo2Hi/jmiyiAWcRxVWxJ4GQaDQ==}
+  '@sfroment/logger@0.6.11':
+    resolution: {integrity: sha512-lu88HwfcDwarOTzn3qgj56PL3qfTHQFqXMbFVpU7i1XXUkDINzLKGcy1C85knCQnM6kJYBYaYsAfIvnM8ngTyw==}
 
-  '@sfroment/network@0.6.10':
-    resolution: {integrity: sha512-+0gCJQq3D1nO6xqfbXGlo5LIcmTLZwV/9SBM9PBh2EY1Xu/l+WVsnmmAFkhPZhfEamY66B34HKDChpaPA+CHUA==}
+  '@sfroment/network@0.6.11':
+    resolution: {integrity: sha512-GcUwncGWOsOHyuheTefuEKvfjVeD3It9nPhOg6Vg9F1ASLvRrHVlJifEwEepoQmkj9BCiWxAgTUcN0OOFP3U8g==}
 
-  '@sfroment/node@0.6.10':
-    resolution: {integrity: sha512-Vr8J4Qokjh7hrtscbIBs/56T5n5lVCzE3EUxSfZQxZ5EIUlrJWKBupGf6tChdoG76mDGQfpuhsekKCHJruWeIA==}
+  '@sfroment/node@0.6.11':
+    resolution: {integrity: sha512-7OqY6fDOxwuif5wW9VjScg4/WRXkyHavrbvBfClonR622l6pPhj9PgO+S3gbWceH/zRo4eBnwp975fjXnhhsZQ==}
 
-  '@sfroment/object@0.6.10':
-    resolution: {integrity: sha512-6t6IlhEeGc8yxMolu4ZMHi2Wd3TphVjp103QVE8N89O5ZSDHKeFGUdp+5x9a8ZSLoQ4QkerlIh8OeTHfXCihVg==}
+  '@sfroment/object@0.6.11':
+    resolution: {integrity: sha512-7lIkeil8uynjzXiK+X2vNsfVKHlJh/1kucIZpIBVJXv+EtqdVfgOoVhwFttoNYowbPKO3DLkpyGjZWElxW559g==}
 
   '@shikijs/core@1.29.1':
     resolution: {integrity: sha512-Mo1gGGkuOYjDu5H8YwzmOuly9vNr8KDVkqj9xiKhhhFS8jisAtDSEWB9hzqRHLVQgFdA310e8XRJcW4tYhRB2A==}
@@ -6658,16 +6658,16 @@ snapshots:
       '@noble/hashes': 1.7.1
       '@scure/base': 1.2.4
 
-  '@sfroment/blueprints@0.6.10':
+  '@sfroment/blueprints@0.6.11':
     dependencies:
       '@thi.ng/random': 4.1.10
 
-  '@sfroment/logger@0.6.10':
+  '@sfroment/logger@0.6.11':
     dependencies:
       loglevel: 1.9.2
       loglevel-plugin-prefix: 0.8.4
 
-  '@sfroment/network@0.6.10(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))':
+  '@sfroment/network@0.6.11(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))':
     dependencies:
       '@bufbuild/protobuf': 2.2.3
       '@chainsafe/libp2p-gossipsub': 14.1.0
@@ -6689,7 +6689,7 @@ snapshots:
       '@libp2p/webtransport': 5.0.22
       '@multiformats/multiaddr': 12.3.4
       '@multiformats/multiaddr-matcher': 1.6.0
-      '@sfroment/logger': 0.6.10
+      '@sfroment/logger': 0.6.11
       it-length-prefixed: 9.1.1
       it-map: 3.1.1
       it-pipe: 3.0.1
@@ -6701,7 +6701,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@sfroment/node@0.6.10(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))':
+  '@sfroment/node@0.6.11(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))':
     dependencies:
       '@chainsafe/bls': 8.1.0
       '@chainsafe/bls-keygen': 0.4.0
@@ -6711,10 +6711,10 @@ snapshots:
       '@grpc/reflection': 1.0.4(@grpc/grpc-js@1.12.5)
       '@libp2p/crypto': 5.0.9
       '@libp2p/interface': 2.4.0
-      '@sfroment/blueprints': 0.6.10
-      '@sfroment/logger': 0.6.10
-      '@sfroment/network': 0.6.10(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))
-      '@sfroment/object': 0.6.10
+      '@sfroment/blueprints': 0.6.11
+      '@sfroment/logger': 0.6.11
+      '@sfroment/network': 0.6.11(react-native@0.77.0(@babel/core@7.26.7)(@babel/preset-env@7.26.7(@babel/core@7.26.7))(react@18.3.1))
+      '@sfroment/object': 0.6.11
       commander: 13.1.0
       dotenv: 16.4.7
       uint8arrays: 5.1.0
@@ -6725,10 +6725,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@sfroment/object@0.6.10':
+  '@sfroment/object@0.6.11':
     dependencies:
       '@chainsafe/bls': 8.1.0
-      '@sfroment/logger': 0.6.10
+      '@sfroment/logger': 0.6.11
       es-toolkit: 1.30.1
       fast-deep-equal: 3.1.3
       fast-equals: 5.2.2
