@@ -37,14 +37,16 @@ export class ExampleDRPObject implements DRP {
 		this._inserts.splice(index, length);
 	}
 
-	// insert -> first 
-	// insert -> delete 
-	// insert -> insert 
+	// insert -> first
+	// insert -> delete
+	// insert -> insert
 	// insert the insert hisght peerID 1st
 	// delete the delete highest peerID 1st
 	resolveConflicts(vertices: Vertex[]): ResolveConflictsType {
-		if (vertices.length <= 1 || vertices[0].hash === vertices[1].hash) { return { action: ActionType.Nop }; }
-		
+		if (vertices.length <= 1 || vertices[0].hash === vertices[1].hash) {
+			return { action: ActionType.Nop };
+		}
+
 		const opInsert = "insert";
 		const opDelete = "delete";
 
@@ -53,30 +55,21 @@ export class ExampleDRPObject implements DRP {
 		const leftOp = left.operation?.opType;
 		const rightOp = right.operation?.opType;
 
-		if (leftOp  === rightOp) {
+		if (leftOp === rightOp) {
 			const leftPeerId = left.peerId;
 			const rightPeerId = right.peerId;
-			const leftContent = left.operation?.value[2];
-			const rightContent = right.operation?.value[2];
 			if (leftPeerId > rightPeerId) {
-				console.log("resolveConflicts1 leftPeerId > rightPeerId\n", leftPeerId, rightPeerId, leftContent, rightContent, vertices[0].hash, vertices[1].hash);
 				return { action: ActionType.Swap };
 			}
-			if (leftPeerId === rightPeerId && leftContent < rightContent) {
-				console.log("resolveConflicts2\n");
-				return {action: ActionType.Swap};
-			}
-			console.log("resolveConflicts3\n");
-			return {action: ActionType.Nop};
+			return { action: ActionType.Nop };
 		}
 
 		if (leftOp === opDelete && rightOp === opInsert) {
-			console.log("resolveConflicts4\n");
-			return {action: ActionType.Swap};
+			return { action: ActionType.Swap };
 		}
 
 		console.log("resolveConflicts5\n");
-		return {action: ActionType.Nop};
+		return { action: ActionType.Nop };
 	}
 
 	query_insert(): Insert[] {
