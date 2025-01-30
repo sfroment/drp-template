@@ -11,6 +11,7 @@ import { renderDiscoveryPeers, renderDRP, renderPeers } from "./render";
 import { renderDialableMultiaddr } from "./render";
 import { renderPeerID } from "./render";
 import { drpState, saveSelection } from "./shared";
+import { generateRandomId } from "./utils/randomId";
 
 let isOurInput = false;
 
@@ -33,7 +34,12 @@ async function joinHandler(node: DRPNode) {
 	renderDRP(true);
 }
 
-async function connectHandler(node: DRPNode) {
+async function createHandler(node: DRPNode) {
+	if (drpIdInput.value.length === 0) {
+		drpIdInput.value = generateRandomId();
+		drpIdInput.innerText = drpIdInput.value;
+	}
+
 	drpState.drpID = drpIdInput.value;
 	if (!drpState.drpID) return;
 
@@ -85,7 +91,7 @@ async function main() {
 	}, 1000);
 
 	joinDRPButton.onclick = () => joinHandler(node);
-	createDRPButton.onclick = () => connectHandler(node);
+	createDRPButton.onclick = () => createHandler(node);
 	drpObjectElement.addEventListener("input", () => {
 		const selection = saveSelection(drpObjectElement);
 		if (!selection) return;
