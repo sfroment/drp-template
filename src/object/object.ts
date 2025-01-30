@@ -4,7 +4,7 @@ import {
 	type ResolveConflictsType,
 	SemanticsType,
 	type Vertex,
-} from "@sfroment/object";
+} from "@ts-drp/object";
 
 import { getColorForPeerId } from "../utils/colors";
 
